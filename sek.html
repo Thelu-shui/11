@@ -1,95 +1,32 @@
 ---
-layout: aa
+layout: bb
 ---
 
-  <!-- 导航 -->
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">我的博客</a>
-      </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        
-        
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <form class="navbar-form navbar-left">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-              </div>
-              <button type="submit" class="btn btn-default">搜索</button>
-            </form>
-          </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
 
-  
+  {% for post in site.posts %}
   <!-- 列表 -->
   <div class="col-md-10 col-md-offset-1">
     <div class="list-group">
-      <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading title">第一</h4>
-        <p class="list-group-item-text zhaiyao">本报北京11月20日电（中国青年报⋅中国青年网记者 邱晨辉）记者从第五届中国(国际)商业航天高峰论坛获悉，我国正在研制新一代中型运载火箭长征八号，预计于2020年实施首飞。目前，该型火箭已进入产品生产总装测试阶段。
-
-        据航天科技集团中国运载火箭技术研究院副院长唐一华介绍，长征八号运载火箭将依托我国新一代运载火箭的可靠技术，开展一系列创新设计和研制，届时有望填补我国太阳同步轨道3吨至4.5吨运载能力的空白，并兼顾近地轨道和地球同步转移轨道发射能力。
-
-        值得一提的是，长征八号运载火箭芯一级继承了长征七号运载火箭一子级状态，芯二级继承了长三甲系列运载火箭三子级状态。据唐一华介绍，长征八号运载火箭从签署合同到火箭出厂，履约周期约12个月，发射周期为10天。
-
-        唐一华表示，长征八号运载火箭以商业化、低成本、方便快捷、好使用为目标进行设计，既要保证一定的性能和可靠性，又要满足商业用户低成本的需求，预计长征八号运载火箭投入市场后，初期年发射量可达10发以上，后期年产可达20发以上。</p>
+      <a href="{{site.baseurl}}{{post.url}}">
+        <h4 class="list-group-item-heading title">{{post.title}}</h4>
+        <p class="list-group-item-text zhaiyao">{{post.subheading}}</p>
       </a>
-      <p class="text-right author">作者：卡速度与阿斯顿 时间：2019-11-15</p>
-      <hr>
-      <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading title">第二</h4>
-        <p class="list-group-item-text zhaiyao">环球网报道 记者 张晓雅】美国有线电视新闻网（CNN）20日报道称，柏林警方证实，当地时间19日晚，德国前总统理查德•冯•魏茨泽克的儿子弗里茨•冯•魏茨泽克（Fritz von Weizsacker）在发表演讲时遇刺身亡。德国政府发言人20日表示，总理默克尔已表示哀悼。</p>
-      </a>
-      <p class="text-right author">作者：卡上接电话 时间：2019-11-15</p>
-      <hr>
-      <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading title">第3</h4>
-        <p class="list-group-item-text zhaiyao">【环球网报道 记者 温家越】英国安德鲁王子16日私自接受英国广播公司（BBC）专访，否认他卷入美国亿万富豪杰弗里•爱泼斯坦的丑闻，不料“洗白”不成反有愈描愈黑之嫌，被媒体称为“自戴安娜王妃过世以来英国王室最大的公关灾难”。据英国《卫报》20日报道，英国女王已批准安德鲁王子“在可预见的未来辞去公职”。</p>
-      </a>
-      <p class="text-right author">作者：asdasdasd 时间：2019-11-15</p>
-      <hr>
-      <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading title">第4</h4>
-        <p class="list-group-item-text zhaiyao">2019年11月21日8时,锡林郭勒盟来京就医的两名肺鼠疫患者的所有密切接触者，已按照标准，全部解除隔离医学观察。
-
-        近日，两名患者病情危重，北京市已多次组织知名专家会诊，及时优化调整治疗方案，医护人员密切监测病情，中西医并重，全力救治患者。
-
-        北京市将继续在国家卫生健康委指导下，充分发挥专家作用，依法科学规范做好疾病防治工作。</p>
-      </a>
-      <p class="text-right author">作者：asdasd 时间：2019-11-15</p>
-      <hr>
-      <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading title">第5</h4>
-        <p class="list-group-item-text zhaiyao">呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸呸</p>
-      </a>
-      <p class="text-right author">作者：thelu 时间：2019-11-15</p>
+      <p class="text-right author">作者：{{post.author}} 时间：2019-11-15</p>
       
     </div>
   </div>
-
+  {% endfor %}
   <div style="clear:both"></div>
   
   <!-- 尾部 -->
   <footer class="footer navbar navbar-inverse">
-    <p>****** 最终解释权归thelu所有</p>
+  <p><center>****** 最终解释权归thelu所有</center></p>
   </footer>
 
   <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+   <!--  <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script> -->
+　　<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
 </body>
